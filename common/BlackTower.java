@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
 
 
-@Mod(modid = "LMM", name = "BlackTower", version = "0.0.0_1")
+@Mod(modid = "BLackTower_LMM", name = "BlackTower Beta", version = "0.0.1")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class BlackTower{
 	
