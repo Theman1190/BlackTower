@@ -13,7 +13,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
 public class BlackTower{
 	
-	@Instance("Generic")
+	@Instance("BlackTower")
     public static BlackTower instance;
 	
 	@PreInit
