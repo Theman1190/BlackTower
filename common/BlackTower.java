@@ -1,8 +1,10 @@
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.Mod.PostInit;
 import cpw.mods.fml.common.Mod.PreInit;
+import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -16,6 +18,9 @@ public class BlackTower{
 	@Instance("BlackTower")
     public static BlackTower instance;
 	
+	//@SidedProxy(clientSide="ClientProxy", serverSide="CommonProxy")
+    //public static CommonProxy proxy;
+	
 	@PreInit
     public void preInit(FMLPreInitializationEvent event) {
             
@@ -23,7 +28,7 @@ public class BlackTower{
 	
 	@Init
     public void load(FMLInitializationEvent event) {
-           // proxy.registerRenderers();
+            //proxy.registerRenderers();
     }
     
 	@PostInit
